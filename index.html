@@ -19,7 +19,7 @@ tw-passage[tags~="no_header"] tw-include[type="header"] {
 }
 </style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="first-door-check" tags="" position="1450,807" size="100,100">{
 =&gt;&lt;=
-(if:$code is &quot;WMSFFP&quot;)[Well done on solving the first puzzle! (button:)[[Go to the 2nd room-&gt;2nd-room]](set: $first_room_passed to true)](else:)[No way forward here, unfortunately! &lt;br&gt; (button:)[[enter-passcode&lt;-Try again!]]]
+(if:$code is &quot;WMSFFK&quot;)[Well done on solving the first puzzle! (button:)[[Go to the 2nd room-&gt;2nd-room]](set: $first_room_passed to true)](else:)[No way forward here, unfortunately! &lt;br&gt; (button:)[[enter-passcode&lt;-Try again!]]]
 
 (if:$first_room_passed is false)[(if: $note_read is false)[(button:)[[Read the note-&gt;note]]]]
 (if:$first_room_passed is false)[(button:)[[Check the room again-&gt;check-room]]]
@@ -309,13 +309,14 @@ There are not much in the room! Except for a door with a keypad, a screen on the
 
 
 ---
+=&gt;&lt;=
 What will you do?
 (button:)[[Read the note-&gt;note]]
 (button:)[[Check the laptop-&gt;check-laptop]]
 (button:)[[Guess the pass-code-&gt;enter-passcode]]
 (if: $note_read is true)[(button:)[[Accept defeat!-&gt;asphyxiate]]]
 (button:)[(link-rerun:&quot;Search \&quot;the Web\&quot;&quot;)[(open-url:&quot;https://images.google.com&quot;)]]
-
+&lt;==
 }
 </tw-passagedata><tw-passagedata pid="21" name="Disclaimer" tags="no_header" position="2368,402" size="100,100">{
 The story, all names, characters, and incidents portrayed in this work are fictitious. No identification with actual persons (living or deceased), places, buildings, and products is intended or should be inferred.
@@ -368,7 +369,7 @@ On the desktop, you find 6 PNG files named &#96;{1..6}.png&#96;! You open them i
 &lt;img src=&quot;resources/fs.jpg&quot; alt=&quot;Hmm!&quot; height=&quot;150&quot; width=&quot;150&quot; /&gt;
 &lt;img src=&quot;resources/RF.jfif&quot; alt=&quot;Hmm!&quot; height=&quot;150&quot; width=&quot;150&quot; /&gt;
 &lt;img src=&quot;resources/rf.jpg&quot; alt=&quot;Hmm!&quot; height=&quot;150&quot; width=&quot;150&quot; /&gt;
-&lt;img src=&quot;resources/KP.jpg&quot; alt=&quot;Hmm!&quot; height=&quot;150&quot; width=&quot;150&quot; /&gt;
+&lt;img src=&quot;resources/GK.jpg&quot; alt=&quot;Hmm!&quot; height=&quot;150&quot; width=&quot;150&quot; /&gt;
 }
 
 &lt;br&gt;
